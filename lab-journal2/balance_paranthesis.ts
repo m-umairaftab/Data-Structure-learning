@@ -14,7 +14,7 @@ function isBalanced(str:any){
             }
             else if(peek(stack) === '('){
                 stack.pop()
-            }
+             }
             else{
                 return false
                 
