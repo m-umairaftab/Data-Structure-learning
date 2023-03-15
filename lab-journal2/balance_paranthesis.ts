@@ -1,3 +1,4 @@
+export{}
 function peek (stack: any ){
     return stack[stack.length-1]
 }
