@@ -12,3 +12,4 @@ function Ackermann(m: number, n: number): any {
 }
 
 console.log(Ackermann(2, 2)); 
+
