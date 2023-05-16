@@ -17,25 +17,6 @@ class TreeNode {
     return `${root.val},${leftSerialized},${rightSerialized}`
   }
   
-  function deserialize(data) {
-    const values = data.split(',')
-  
-    function buildTree() {
-      const val = values.shift()
-  
-      if (val === 'null') {
-        return null
-      }
-  
-      const node = new TreeNode(parseInt(val))
-      node.left = buildTree()
-      node.right = buildTree()
-  
-      return node
-    }
-  
-    return buildTree()
-  }
   
   const root = new TreeNode(1)
   root.left = new TreeNode(2)
@@ -45,7 +26,4 @@ class TreeNode {
   
   const serialized = serialize(root)
   console.log(serialized)
-  
-  const deserialized = deserialize(serialized)
-  console.log(deserialized)
   
